@@ -1,31 +1,9 @@
 {
-  "name": "gigacaptcha",
-  "version": "1.0.1",
-  "description": "🚀 **Are bots getting smarter?** Are you tired of boring CAPTCHAs that just ask you to click a checkbox?  \r Well, **GigaCaptcha is here to change the game!** Instead of *\"Select all traffic lights,\"* you’ll face **the most ridiculous challenges ever!** 🤯",
-"main": "dist/GigaCaptcha.js",
-"types": "dist/GigaCaptcha.d.ts",
-"files": ["dist"],
-"peerDependencies": {
-  "react": "^18.0.0",
-  "react-dom": "^18.0.0"
-},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^16.0.0",
-    "@rollup/plugin-typescript": "^12.1.2",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "install": "^0.13.0",
-    "npm": "^11.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "rollup": "^4.34.8",
-    "typescript": "^5.7.3"
+    "private": true,
+    "workspaces": [
+      "package",
+      "docs",
+      "test"
+    ]
   }
-}
+  
