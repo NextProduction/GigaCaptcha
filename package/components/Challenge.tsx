@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Challenge = ({ onSolve }: { onSolve: () => void }) => {
   return (
     <div>
