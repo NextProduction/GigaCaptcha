@@ -1,0 +1,12 @@
+{
+  "name": "gigacaptcha",
+  "version": "1.0.0",
+  "description": "🚀 **Are bots getting smarter?** Are you tired of boring CAPTCHAs that just ask you to click a checkbox?  \r Well, **GigaCaptcha is here to change the game!** Instead of *\"Select all traffic lights,\"* you’ll face **the most ridiculous challenges ever!** 🤯",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
