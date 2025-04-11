@@ -1,3 +1,4 @@
+"use client"
 import { GigaCaptcha } from "@/components/giga-captcha"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"

@@ -81,34 +81,34 @@ export function ChessChallenge({ challenge, onSuccess, onFailure }: ChallengeCom
 
   // Handle piece movement
   const onDrop = (sourceSquare: string, targetSquare: string) => {
-    if (!game) return false
-
     try {
-      // Check if the move is legal
+      if (!game) return false
+
       const move = game.move({
         from: sourceSquare,
         to: targetSquare,
         promotion: "q", // Always promote to queen for simplicity
       })
 
-      // If move is illegal, return false
-      if (!move) return false
+      if (!move) {
+        // Invalid move
+        return false
+      }
 
-      // Update the game state
+      // Valid move: update state
       setFen(game.fen())
       setMoveCount((prev) => prev + 1)
       updateStatus(game)
-
-      // Reset selection
       setMoveFrom("")
       setOptionSquares({})
 
       return true
     } catch (error) {
-      console.error("Error making move:", error)
+      console.error("Error in onDrop:", error)
       return false
     }
   }
+
 
   // Handle square click
   const onSquareClick = (square: string) => {
